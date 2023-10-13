@@ -30,6 +30,22 @@ body {
     background-image: linear-gradient(to right, rgb(99, 255, 242), rgb(30, 120, 255));
 }
 
+.navBar {
+    
+}
+
+#showButton {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0074d9;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
 .container {
     text-transform: capitalize;
     width: 100%;

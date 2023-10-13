@@ -2,6 +2,22 @@ const formsubmit = document.querySelector("form");
 const errormessage = document.querySelector(".error");
 const city = document.querySelector("#city");
 
+// Get references to the button and the hidden content
+const showButton = document.getElementById("showButton");
+const hiddenContent = document.getElementById("hiddenContent");
+
+// Add a click event listener to the button
+showButton.addEventListener("click", () => {
+  // Check if the hidden content is currently hidden
+  if (hiddenContent.classList.contains("hidden")) {
+    // If it's hidden, remove the 'hidden' class to display it
+    hiddenContent.classList.remove("hidden");
+  } else {
+    // If it's visible, add the 'hidden' class to hide it
+    hiddenContent.classList.add("hidden");
+  }
+});
+
 formsubmit.addEventListener("submit", async (event) => {
   event.preventDefault(); // Prevents the form from submitting and refreshing the page
 

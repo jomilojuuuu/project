@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather Check</title>
+    <title>Weather Checkers</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +14,23 @@
   </head>
 
   <body>
+    <nav class="navBar">
+      <button id="showButton">INFO</button>
+      <div id="hiddenContent" class="hidden">
+        <h3>Group Members</h3>
+        <ol>
+          <li>OKE OLUWAJOMILOJU MARCUS <span>210591147</span></li>
+          <li>AJOSE SEGBENHO NUGBOYON <span>210591071</span></li>
+          <li>MUSTAPHA FADHULULLAH <span>210591074</span></li>
+          <li>OLOSHO AYUBA OLUWADAMILARE<span>2210591170</span></li>
+          <li>ANI CHUKWEMEKA VICTOR <span>210591027</span></li>
+          <li>BRAIMOH LAWAL LANRENWAJU <span>210591044</span></li>
+          <li>PHILSON ABADI EBEUBE <span>210591080</span></li>
+          <li>MALEKEOWEI OYINBRAKEMI PAUL <span>210591071</span></li>
+          <li>OJOOBA ABDULWARITH OLAWALE <span>210591089</span></li>
+        </ol>
+      </div>
+    </nav>
     <div class="container">
       <h1 class="city-heading">Welcome to Weather Control</h1>
       <form action="">
@@ -22,7 +39,7 @@
       <h2 class="city-heading error"><span id="city"></span></h2>
       <div id="weather">
         <div class="temperature-card">
-          <h3>Temperature Info</h3>
+          <h3>Temperature</h3>
           <h2><span id="temp"></span></h2>
           <div id="details">
             <p>
@@ -36,7 +53,7 @@
           </div>
         </div>
         <div class="temperature-card">
-          <h3>Wind Info</h3>
+          <h3>Wind</h3>
           <h2><span id="windspeed"></span></h2>
           <div id="details">
             <p>wind degrees<br /><span id="wind_degrees"></span></p>
@@ -44,7 +61,7 @@
           </div>
         </div>
         <div class="temperature-card">
-          <h3>Humidity Info</h3>
+          <h3>Humidity</h3>
           <h2><span id="humidity"></span>%</h2>
           <div id="details">
             <p>sunrise time<br /><span id="sunrise"></span></p>
